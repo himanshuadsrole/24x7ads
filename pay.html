@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay - 24x7Ads</title>
+
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="/assets/favicon.webp">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <header class="header-nb relative">
+         <a href="https://24x7ads.com/" class="logo">
+         <img class="logo-img block" src="/assets/new-ads-r-01-copywhite-01.svg" alt="copywhite-01"  width="200">
+         </a>
+
+         <input type="checkbox" id="nb" name="categories" value="nb">
+         <label id="nav-open" for="nb">
+            <div id="navbar" class="navicon">
+               <div></div>
+             </div>
+            <div class="nav-a pt-2">
+               <a class="nav-aa" id="about" href="http://24x7Ads.com/#about-us">ABOUT US</a>
+               <details>
+                <summary id="services-dropdown" class="relative">
+                    <div id="up" class="summary-chevron-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+
+                   <a class="nav-service" id="services">OUR SERVICES</a>
+
+                   <div id="down" class="summary-chevron-down">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                   </div>
+                </summary>
+                <a class="nav-aaa" id="seo" href="http://24x7Ads.com/seo-services-company">SEO SERVICES</a>
+                <a class="nav-aaa" id="oms" href="http://24x7Ads.com/online-marketing-services">ONLINE MARKETING SERVICES</a>
+                <a class="nav-aaa" id="lss" href="http://24x7Ads.com/local-seo-services">LOCAL SEO SERVICES</a>
+                <a class="nav-aaa" id="wds" href="http://24x7Ads.com/web-design-services">WEB DESIGN SERVICES</a>
+                <a class="nav-aaa" id="smm" href="http://24x7Ads.com/social-media-marketing">SOCIAL MEDIA MARKETING</a>
+               </details>
+               <a class="nav-aa" id="price" href="http://24x7Ads.com/wix">WIX</a>
+               <a class="nav-aa" id="price" href="http://24x7Ads.com/#pricing">PRICING</a>
+               <a class="nav-aa" id="pay" href="http://24x7Ads.com/pay">PAY</a>
+               <a class="nav-aa" id="customer-review" href="http://24x7Ads.com/#google-reviews">REVIEWS</a>
+               <a class="nav-aa" id="blog-page" href="http://24x7Ads.com/blogs">BLOG</a>
+               <a class="nav-aa" id="cont" href="http://24x7Ads.com/#contact">CONTACT</a>
+            </div>
+         </label>
+      
+      </header>
+
+
+    <section class="main-container">
+
+
+
+
+        <section style="background-image: linear-gradient(to left, #00c6fb 0%, #005bea 100%);"  class="pay-section bg-white flex flex-col items-center justify-between py-40    md:flex-row">
+
+
+
+            <div class="div-one text-center     sm:pl-20 sm:text-left">
+                <h2 class="text-white text-4xl md:text-7xl">Let's Get Started</h2>
+                <h2 class="pt-8 font-bold text-3xl md:text-6xl"><span class="font-normal text-white text-xl pr-6 md:text-2xl">with</span>24x7Ads</h2>
+            </div>
+        
+
+            
+        </section>
+        
+        
+        <section class="flex justify-center    md:justify-end">
+
+            <div class="relative -top-20 h-auto max-w-md rounded-xl p-4    sm:p-6 lg:p-8 md:mr-32 md:-top-72 md:left" href="">
+                <div class="rounded-2xl bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 shadow-2xl">
+                <span style="background-image: linear-gradient(120deg, #ffe082 0%, #97DEFF 100%);" class="block rounded-xl p-4 sm:p-6 lg:p-8" href="">
+                    <div class="mt-16">
+                    <div id="smart-button-container">
+                        <div style="text-align: left"><label for="description">Website URL </label><input style="max-width:10rem;" type="text" name="descriptionInput" class="rounded border-solid border-2 border-black" id="description" maxlength="127" value=""></div>
+                        <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
+                        <div style="text-align: left"><label for="amount">Enter Amount </label><input style="max-width:10rem;" name="amountInput" class="rounded border-solid border-2 border-black" type="number" id="amount" value=""><span> USD</span></div>
+                        <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
+                        <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value=""></div>
+                        <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+                        <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
+                    </div>
+                    <script src="https://www.paypal.com/sdk/js?client-id=AcUAAHXAdW5QP1O1HTSFimaZ3NeCO4fMLn__MjUGehg-xBexrnvP9d4j5VP23K_6LMNVCBnQUNUrFCcG&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+                    <script>
+                        function initPayPalButton() {
+                        var description = document.querySelector('#smart-button-container #description');
+                        var amount = document.querySelector('#smart-button-container #amount');
+                        var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+                        var priceError = document.querySelector('#smart-button-container #priceLabelError');
+                        var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+                        var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+                        var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+                        var elArr = [description, amount];
+                        if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+                            invoiceidDiv.style.display = "block";
+                        }
+                        var purchase_units = [];
+                        purchase_units[0] = {};
+                        purchase_units[0].amount = {};
+            
+                        function validate(event) {
+                            return event.value.length > 0;
+                        }
+                        paypal.Buttons({
+                            style: {
+                            color: 'blue',
+                            shape: 'rect',
+                            label: 'pay',
+                            layout: 'vertical',
+                            },
+                            onInit: function(data, actions) {
+                            actions.disable();
+                            if (invoiceidDiv.style.display === "block") {
+                                elArr.push(invoiceid);
+                            }
+                            elArr.forEach(function(item) {
+                                item.addEventListener('keyup', function(event) {
+                                var result = elArr.every(validate);
+                                if (result) {
+                                    actions.enable();
+                                } else {
+                                    actions.disable();
+                                }
+                                });
+                            });
+                            },
+                            onClick: function() {
+                            if (description.value.length < 1) {
+                                descriptionError.style.visibility = "visible";
+                            } else {
+                                descriptionError.style.visibility = "hidden";
+                            }
+                            if (amount.value.length < 1) {
+                                priceError.style.visibility = "visible";
+                            } else {
+                                priceError.style.visibility = "hidden";
+                            }
+                            if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
+                                invoiceidError.style.visibility = "visible";
+                            } else {
+                                invoiceidError.style.visibility = "hidden";
+                            }
+                            purchase_units[0].description = description.value;
+                            purchase_units[0].amount.value = amount.value;
+                            if (invoiceid.value !== '') {
+                                purchase_units[0].invoice_id = invoiceid.value;
+                            }
+                            },
+                            createOrder: function(data, actions) {
+                            return actions.order.create({
+                                purchase_units: purchase_units,
+                            });
+                            },
+                            onApprove: function(data, actions) {
+                            return actions.order.capture().then(function(orderData) {
+                                // Full available details
+                                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                                // Show a success message within this page, e.g.
+                                const element = document.getElementById('paypal-button-container');
+                                element.innerHTML = '';
+                                element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                                // Or go to another URL:  actions.redirect('thank_you.html');
+                            });
+                            },
+                            onError: function(err) {
+                            console.log(err);
+                            }
+                        }).render('#paypal-button-container');
+                        }
+                        initPayPalButton();
+                    </script>
+            
+                    </div>
+                </span>
+                </div>
+            </div>
+
+        </section>
+        
+        
+        <div class="payment-images    md:-mt-28"></div>
+
+
+        <section class="flex flex-col items-center justify-center bg-gray-200 px-12 pt-20 pb-24    md:pt-24 md:pb-32">
+            <h3 class="text-center font-medium text-black text-lg">See how optimized your website is for an exact keyword — for FREE!</h3>
+            <h3 class="text-center font-semibold text-black mt-4 mb-10 text-2xl    sm:text-3xl">What's Your Website SEO Score ?</h2>
+            <div class="w-full bg-transparent rounded-xl shadow border-2 border-gray-500    md:w-4/5">
+            <form id="scoreForm">
+               <div class="flex flex-col items-center justify-center gap-2 px-4 py-5    md:flex-row">
+                  <input name="your-website" id="your-website" placeholder="Your Website" class="w-full text-black placeholder-gray-600 md:w-3/6 px-4 py-2.5 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-300  focus:border-blueGray-500 focus:bg-white dark:focus:bg-gray-800 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400"> 
+                  <input name="your-email" id="your-email"  placeholder="Your Email" class="w-full text-black placeholder-gray-600 md:w-3/6 px-4 py-2.5 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-300  focus:border-blueGray-500 focus:bg-white dark:focus:bg-gray-800 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400"> 
+                  <button type="button" class="flex items-center px-5 py-2 font-medium tracking-wide text-white bg-black rounded-xl  hover:bg-gray-400  hover:text-black hover:border-2 hover:border-black focus:outline-none focus:bg-gray-900">Submit</button>
+               </div>
+            </form>
+            </div>
+            <p class="hidden bg-white text-red-600 px-4 py-2 mt-8 shadow-xl rounded-lg"> Your response has been submitted successfully.</p>
+         </section>
+
+
+       <footer id="contact" class="h-auto relative flex flex-col items-center justify-center py-8    sm:justify-end sm:flex-row md:h-screen">
+          <div class="bg-video2">
+             <video class="bg-video__content2" autoplay muted loop playsinline poster="/assets/gaulois.webp">
+                <source src="/assets/gaulois-25144.webm" type="video/webm">
+             </video>
+          </div>
+
+          <div class="flex flex-col justify-between items-center    md:flex-row">
+
+            <div class="flex w-10/12    sm:ml-20 md:w-3/12">
+                <div class="m-auto">
+                      <div class="mt-5 bg-white rounded-xl shadow-2xl border-2 border-gray-500">
+                        <form id="pingForm"></form>
+                            <div class="px-5 py-5">
+                               <h3 class="text-xl text-center font-semibold text-black mb-4    sm:text-2xl">Get Your FREE Website Audit</h2>
+
+                               <input name="website-url" id="website-url" placeholder="Website URL" class=" text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200  focus:border-blueGray-500 focus:bg-white dark:focus:bg-gray-800 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400"> 
+                               <input name="name" id="name" placeholder="Name" class=" text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200  focus:border-blueGray-500 focus:bg-white dark:focus:bg-gray-800 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400"> 
+                               <input name="email" id="email"  placeholder="Email" class=" text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200  focus:border-blueGray-500 focus:bg-white dark:focus:bg-gray-800 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400"> 
+                               <input name="phone" id="phone"  placeholder="Phone" class=" text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200  focus:border-blueGray-500 focus:bg-white dark:focus:bg-gray-800 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400"> 
+                               <input name="company" id="company"  placeholder="Company" class=" text-black placeholder-gray-600 w-full px-4 py-2.5 mt-2 text-base   transition duration-500 ease-in-out transform border-transparent rounded-lg bg-gray-200  focus:border-blueGray-500 focus:bg-white dark:focus:bg-gray-800 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ring-gray-400"> 
+                            </div>
+                            <hr class="mt-4">
+                            <div class="flex justify-center p-4">
+                                  <button type="button" class="flex items-center px-5 py-2.5 font-medium tracking-wide text-white capitalize   bg-black rounded-md hover:bg-gray-800  focus:outline-none focus:bg-gray-900  transition duration-300 transform active:scale-95 ease-in-out">Start My Website Analysis</button>
+                            </div>
+                        </form>
+                      </div>
+                </div>
+             </div>
+
+            <div class="get-in-touch shadow-xl flex flex-col justify-center w-10/12 h-[auto] rounded-3xl mr-0 my-6 px-6 sm:w-1/4 sm:mr-32 sm:h-[500px] md:my-0">
+                <div class="text-center pt-4 flex flex-col    sm:text-left">
+                    <h2 class="text-3xl text-white pb-4    sm:pb-0">Get in Touch</h2>
+                    <p class="text-white text-sm    sm:text-lg">24x7 Ads is US-based Digital Marketing Agency that offers SEO, SEM and Website Design solutions.</p>
+                </div>
+                <div class="pb-4 pt-8 flex flex-col items-center gap-4    sm:flex-row">
+                    <span><img class="h-10    sm:h-12" src="/assets/location.svg" alt="location"></span>
+                    <div class="text-center    sm:text-left">
+                    <h3 class="text-md text-white    sm:text-lg">Visit Us:</h3>
+                    <p class="text-white text-sm    sm:text-lg">760a Gilman Street, Berkeley, <br>California 94710, United States</p>
+                    </div>
+                </div>
+                <div class="py-2 flex flex-col items-center gap-4    sm:flex-row">
+                    <span><img class="h-10    sm:h-12" src="/assets/mail.svg" alt="mail"></span>
+                    <div class="text-center    sm:text-left">
+                    <h3 class="text-md text-white    sm:text-lg">Mail Us:</h3>
+                    <a href="mailto:info@24x7ads.com">
+                        <p class="text-white text-sm    sm:text-lg">info@24x7ads.com</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="pt-2 flex flex-col items-center gap-4    sm:flex-row">
+                    <span><img class="h-10    sm:h-12" src="/assets/phone.svg" alt="phone"></span>
+                    <div class="text-center    sm:text-left">
+                    <h3 class="text-md text-white    sm:text-lg">Phone Us:</h3>
+                    <a href="tel:855-443-0001">
+                        <p class="text-white text-sm    sm:text-lg">+1 (855) 443-0001</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="flex justify-center pt-8 pb-4 gap-2    sm:justify-end">
+                    <a href="https://www.instagram.com/24x7ads/" rel="nofollow">
+                    <img class="h-8 scale-75 hover:scale-125" src="/assets/5296765_camera_instagram_instagram-logo_icon-(1).svg" alt="instagram logo_icon">
+                    </a>
+                    <a href="https://www.facebook.com/24x7ad/" rel="nofollow">
+                    <img class="h-8 scale-75 hover:scale-125" src="/assets/5365678_fb_facebook_facebook-logo_icon.svg" alt="facebook logo_icon">
+                    </a>
+                    <a href="https://www.linkedin.com/company/24x7ads/" rel="nofollow">
+                    <img class="h-8 scale-75 hover:scale-125" src="/assets/5296501_linkedin_network_linkedin-logo_icon.svg" alt="linkedin logo_icon">
+                    </a>
+                    <a href="https://www.twitter.com/ads24x7/" rel="nofollow">
+                    <img class="h-8 scale-75 hover:scale-125" src="/assets/5296516_tweet_twitter_twitter-logo_icon.svg" alt="twitter logo_icon">
+                    </a>
+                </div>
+            </div>
+
+          </div>
+          <div class="footer-bottom relative w-full text-center text-xs flex flex-col justify-end px-20 my-12      md:absolute md:flex-row md:bottom-0 md:justify-between md:">
+             <div class="powered-by text-xs text-black pb-4">
+                <strong>24x7Ads A Full Service Digital Marketing Company</strong>
+             </div>
+             <div class="copyright text-xs text-black">
+                <strong>Copyright © 2023 24x7Ads All rights reserved.</strong>
+             </div>
+          </div>
+          <button id="scrollToTopBtn"><img src="/assets/up-arrow.svg" alt="up-arrow" height="30" width="30"></button>
+       </footer>
+
+
+    </section>        
+    
+    <script async src="script.js" type="module"></script>
+ </body>
+
+
+</html>
